@@ -153,3 +153,66 @@ body {
   color: #ccc;
   margin: 0.5rem 0;
 }
+
+/* TRUSTED WORLDWIDE */
+.trusted-worldwide {
+  background-color: #111;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.trusted-worldwide h2 {
+  color: #00fff7;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.trusted-worldwide .subtitle {
+  font-size: 1.2rem;
+  color: #ccc;
+  margin-bottom: 2rem;
+}
+
+.flags {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.flags img {
+  width: 40px;
+  height: auto;
+  border-radius: 4px;
+  box-shadow: 0 0 5px #00fff7;
+}
+
+.client-logos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.client-logos img {
+  height: 60px;
+  width: auto;
+  background-color: #222;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+}
+
+/* Secondary CTA Button */
+.cta-button.secondary {
+  background-color: transparent;
+  border: 2px solid #00fff7;
+  color: #00fff7;
+  transition: all 0.3s ease;
+}
+
+.cta-button.secondary:hover {
+  background-color: #00fff7;
+  color: #000;
+}
