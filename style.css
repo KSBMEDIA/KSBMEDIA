@@ -80,3 +80,40 @@ footer {
   font-size: 0.9rem;
   color: #666;
 }
+
+.why-choose {
+  background-color: #111;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.why-choose h2 {
+  color: #00fff7;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.benefits {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.benefit {
+  background-color: #1a1a1a;
+  padding: 2rem;
+  border-radius: 8px;
+  max-width: 300px;
+  flex: 1 1 300px;
+}
+
+.benefit h3 {
+  color: #00fff7;
+  margin-bottom: 1rem;
+}
+
+.benefit p {
+  color: #ccc;
+  font-size: 1rem;
+}
