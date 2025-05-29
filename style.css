@@ -15,16 +15,20 @@ body {
   padding: 2rem;
 }
 
+.hero-content {
+  max-width: 800px;
+}
+
 .headline {
-  font-size: 3rem;
-  font-weight: bold;
+  font-size: 3.5rem;
+  font-weight: 800;
   color: #00fff7;
 }
 
 .subtext {
-  font-size: 1.2rem;
-  margin-top: 1rem;
+  font-size: 1.3rem;
   color: #ccc;
+  margin-top: 1.5rem;
 }
 
 .cta-button {
@@ -35,13 +39,15 @@ body {
   color: #000;
   text-decoration: none;
   font-weight: bold;
-  border-radius: 5px;
+  font-size: 1rem;
+  border-radius: 8px;
   transition: background 0.3s ease;
 }
 
 .cta-button:hover {
-  background-color: #00bfbf;
+  background-color: #00cfcf;
 }
+
 
 .services {
   background-color: #111;
