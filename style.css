@@ -216,3 +216,44 @@ body {
   background-color: #00fff7;
   color: #000;
 }
+
+/* TESTIMONIALS */
+.testimonials {
+  background-color: #111;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.testimonials h2 {
+  font-size: 2.5rem;
+  color: #00fff7;
+  margin-bottom: 2rem;
+}
+
+.testimonial-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.testimonial {
+  background-color: #1a1a1a;
+  padding: 2rem;
+  max-width: 400px;
+  border-left: 4px solid #00fff7;
+  border-radius: 8px;
+  font-style: italic;
+}
+
+.testimonial p {
+  font-size: 1.1rem;
+  color: #ccc;
+  margin-bottom: 1rem;
+}
+
+.testimonial h4 {
+  font-size: 0.95rem;
+  color: #00fff7;
+  margin: 0;
+}
