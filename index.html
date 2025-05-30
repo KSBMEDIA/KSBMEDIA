@@ -2,188 +2,72 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>KSB Media – Next-Level Websites</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>KSB Media | High-Impact Websites</title>
   <link rel="stylesheet" href="style.css" />
-  <script defer src="script.js"></script>
 </head>
 <body>
 
-<body>
-  <!-- HERO BANNER -->
-  <section class="hero">
-    <div class="hero-content">
-      <h1 class="headline">Websites That Demand Attention</h1>
-      <p class="subtext">KSB Media creates world-class websites that turn visitors into customers. We don't just build — we elevate brands.</p>
-      <a href="#contact" class="cta-button">Get a Free Quote</a>
-    </div>
+  <!-- HEADER WITH NAV -->
+  <header class="header">
+    <a href="index.html" class="logo">KSB Media</a>
+    <nav class="navbar">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="#services">Services</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- SECTION 1: HERO -->
+  <section id="home" class="hero">
+    <h1>Websites That Speak Loudly</h1>
+    <p>We don’t just build websites. We build brands that convert, grow, and stand out.</p>
+    <a href="#contact" class="btn">Get a Website</a>
   </section>
 
-  <!-- WHY CHOOSE KSB MEDIA -->
-  <section class="why-choose">
-    <h2>Why Choose KSB Media?</h2>
-    <div class="benefits">
-      <div class="benefit">
-        <h3>🌍 Global Reach</h3>
-        <p>We design websites that resonate with audiences worldwide, ensuring your brand's message is universally compelling.</p>
+  <!-- SECTION 2: SERVICES -->
+  <section id="services" class="services">
+    <h2>What We Offer</h2>
+    <div class="service-cards">
+      <div class="card">
+        <h3>Custom Websites</h3>
+        <p>Tailored to your brand with premium design and flawless functionality.</p>
       </div>
-      <div class="benefit">
-        <h3>⚡ Lightning-Fast Delivery</h3>
-        <p>Our streamlined process ensures your website is up and running in record time without compromising quality.</p>
+      <div class="card">
+        <h3>Fast Delivery</h3>
+        <p>We work fast — launch-ready in days, not months.</p>
       </div>
-      <div class="benefit">
-        <h3>💼 Professional Aesthetics</h3>
-        <p>We craft visually stunning websites that reflect the professionalism and uniqueness of your brand.</p>
-      </div>
-      <div class="benefit">
-        <h3>💰 Transparent Pricing</h3>
-        <p>Our pricing is clear and competitive, with all transactions conducted in USD for global convenience.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- SERVICES OVERVIEW -->
-  <section class="services">
-    <h2>Our Services</h2>
-    <div class="service-list">
-      <div class="service">
-        <h3>Website Design</h3>
-        <p>Custom, modern, and mobile-first designs that convert visitors into customers.</p>
-      </div>
-      <div class="service">
-        <h3>Development</h3>
-        <p>Fast, responsive, and SEO-optimized builds with clean code.</p>
-      </div>
-      <div class="service">
-        <h3>Redesigns</h3>
-        <p>Outdated site? We’ll transform it into a high-performing asset.</p>
+      <div class="card">
+        <h3>High Conversion</h3>
+        <p>We create action-driven layouts that convert visitors into clients.</p>
       </div>
     </div>
   </section>
 
-  <!-- FEATURED WORK -->
-  <section class="featured-work">
-    <h2>Featured Work</h2>
-    <div class="coming-soon">
-      <p>🚧 Portfolio Coming Soon 🚧</p>
-      <p>Our best work is being curated and will be showcased here shortly. Stay tuned!</p>
-    </div>
+  <!-- SECTION 3: PORTFOLIO / COMING SOON -->
+  <section id="portfolio" class="coming-soon">
+    <h2>Our Work</h2>
+    <p>🚧 Portfolio Coming Soon. Stay tuned — this will blow your mind.</p>
   </section>
-</body>
 
-<!-- TRUSTED WORLDWIDE -->
-<section class="trusted-worldwide">
-  <h2>Trusted by Clients Worldwide</h2>
-  <p class="subtitle">We serve startups, entrepreneurs, and creators across the globe.</p>
+  <!-- SECTION 4: CONTACT -->
+  <section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <p>Fill out the form below and let’s start your project.</p>
+    <form action="https://formspree.io/f/mrbkzzwl" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+  </section>
 
-  <!-- FLAGS -->
-  <div class="flags">
-    <img src="https://flagcdn.com/us.svg" alt="USA" title="USA">
-    <img src="https://flagcdn.com/gb.svg" alt="UK" title="UK">
-    <img src="https://flagcdn.com/ng.svg" alt="Nigeria" title="Nigeria">
-    <img src="https://flagcdn.com/in.svg" alt="India" title="India">
-    <img src="https://flagcdn.com/za.svg" alt="South Africa" title="South Africa">
-  </div>
-
-  <!-- LOGOS (placeholder) -->
-  <div class="client-logos">
-    <img src="https://via.placeholder.com/120x60?text=Client+1" alt="Client 1">
-    <img src="https://via.placeholder.com/120x60?text=Client+2" alt="Client 2">
-    <img src="https://via.placeholder.com/120x60?text=Client+3" alt="Client 3">
-    <img src="https://via.placeholder.com/120x60?text=Client+4" alt="Client 4">
-  </div>
-
-  <!-- CTA BUTTON -->
-  <a href="#contact" class="cta-button secondary">Let’s Build Your Website</a>
-</section>
-
-<!-- TESTIMONIALS -->
-<section class="testimonials">
-  <h2>What Our Clients Say</h2>
-  <div class="testimonial-cards">
-
-    <div class="testimonial">
-      <p>“KSB Media took our online presence to the next level. Fast, professional, and visually stunning!”</p>
-      <h4>— Sarah K., Brand Owner (USA)</h4>
-    </div>
-
-    <div class="testimonial">
-      <p>“The best website agency I've worked with. I now get compliments *every single day* on my site.”</p>
-      <h4>— David M., Tech Founder (UK)</h4>
-    </div>
-
-    <div class="testimonial">
-      <p>“They delivered a modern, fast, and mobile-friendly site that exceeded my expectations.”</p>
-      <h4>— Lindiwe S., Entrepreneur (South Africa)</h4>
-    </div>
-
-  </div>
-</section>
-
-<!-- PRICING -->
-<section class="pricing">
-  <h2>Website Packages</h2>
-  <p class="pricing-subtitle">Choose the perfect plan for your business</p>
-  <div class="pricing-cards">
-
-    <div class="pricing-card">
-      <h3>Starter</h3>
-      <p class="price">$149</p>
-      <ul>
-        <li>1 Page Website</li>
-        <li>Mobile Responsive</li>
-        <li>Basic Design</li>
-        <li>Delivered in 3 Days</li>
-      </ul>
-      <a href="#contact" class="btn">Get Started</a>
-    </div>
-
-    <div class="pricing-card popular">
-      <h3>Professional</h3>
-      <p class="price">$299</p>
-      <ul>
-        <li>Up to 5 Pages</li>
-        <li>Premium Design</li>
-        <li>Mobile Optimized</li>
-        <li>Basic SEO</li>
-        <li>Delivered in 5 Days</li>
-      </ul>
-      <a href="#contact" class="btn">Get Started</a>
-    </div>
-
-    <div class="pricing-card">
-      <h3>Elite</h3>
-      <p class="price">$499</p>
-      <ul>
-        <li>Unlimited Pages</li>
-        <li>Custom Design</li>
-        <li>Advanced SEO</li>
-        <li>Performance Optimization</li>
-        <li>Priority Support</li>
-      </ul>
-      <a href="#contact" class="btn">Get Started</a>
-    </div>
-
-  </div>
-</section>
-
-<!-- CONTACT -->
-<section class="contact" id="contact">
-  <h2>Ready to Elevate Your Brand?</h2>
-  <p>Get your high-converting website started today. We respond within 24 hours.</p>
-  
-  <form class="contact-form" action="https://formspree.io/f/mrbkzzwl" method="POST">
-    <input type="text" name="name" placeholder="Your Name" required>
-    <input type="email" name="_replyto" placeholder="Your Email" required>
-    <textarea name="message" placeholder="Your Message" required></textarea>
-    <button type="submit">Send Message</button>
-  </form>
-</section>
-
-<!-- FOOTER -->
-<footer class="footer">
-  <p>© 2025 KSB Media. All rights reserved.</p>
-</footer>
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>© 2025 KSB Media. Built to Convert. Powered by Passion.</p>
+  </footer>
 
 </body>
 </html>
