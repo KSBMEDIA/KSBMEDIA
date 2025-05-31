@@ -230,3 +230,41 @@ section h2 {
     margin: 0.5rem;
   }
 }
+
+.error-404 {
+  height: 100vh;
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+}
+
+.error-404 h1 {
+  font-size: 4rem;
+  color: #00fff7;
+  margin-bottom: 1rem;
+}
+
+.error-404 p {
+  font-size: 1.3rem;
+  color: #ccc;
+  margin-bottom: 2rem;
+}
+
+.error-404 a {
+  background-color: #00fff7;
+  color: #000;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: background 0.3s ease;
+}
+
+.error-404 a:hover {
+  background-color: #00d6d0;
+}
