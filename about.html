@@ -2,78 +2,64 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>About | KSB Media</title>
 
-  <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
-
-  <!-- Styles -->
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <!-- Header -->
-  <header class="header">
-    <div class="logo">KSB Media</div>
-    <nav class="navbar">
-      <a href="index.html">Home</a>
-      <a href="about.html" class="active">About</a>
-      <a href="services.html">Services</a>
-      <a href="portfolio.html">Portfolio</a>
-      <a href="contact.html">Contact</a>
-    </nav>
+  <header class="site-header">
+    <div class="container">
+      <div class="logo"><a href="index.html">KSB Media</a></div>
+      <nav class="site-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html" class="active">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <!-- Hero Section -->
-  <section class="page-hero">
-    <h1>About KSB Media</h1>
-    <p>Designing digital experiences that inspire confidence and deliver results.</p>
-  </section>
-
-  <!-- About Section -->
-  <section class="about-content">
-    <div class="about-text">
-      <h2>Who We Are</h2>
-      <p>At KSB Media, we believe great design is more than just aesthetics — it's about impact. Our mission is to help ambitious businesses build stunning websites that not only look amazing but also convert visitors into loyal customers.</p>
-      <p>We bridge the gap between beauty and performance, offering high-end digital design solutions tailored for startups, small businesses, and growing brands.</p>
-    </div>
-    <div class="about-image">
-      <picture>
-        <img src="/KSBMEDIA/images/about-team.jpg" alt="Our design team collaborating in studio">
-      </picture>
+  <section class="hero about-hero">
+    <div class="container">
+      <h1>About Us</h1>
+      <p>We craft stunning, conversion-focused websites for ambitious brands.</p>
     </div>
   </section>
 
-  <!-- Core Values -->
-  <section class="core-values">
-    <h2>Our Values</h2>
-    <div class="card-container">
-      <div class="card">
-        <h3>Creativity</h3>
-        <p>We craft beautiful, memorable experiences that set your brand apart.</p>
+  <section class="about-section">
+    <div class="container about-grid">
+      <div class="about-text">
+        <h2>Our Mission</h2>
+        <p>At KSB Media, our mission is to make exceptional design accessible. We empower startups and mid-sized businesses with high-impact digital experiences that are visually stunning, emotionally engaging, and optimized for conversion.</p>
+
+        <h2>Why We’re Different</h2>
+        <ul>
+          <li><strong>Affordable Excellence:</strong> High-end design, without the luxury agency price tag.</li>
+          <li><strong>Hands-On Collaboration:</strong> Work directly with designers and strategists from start to finish.</li>
+          <li><strong>AI-Enhanced Workflows:</strong> Smarter, faster design solutions powered by artificial intelligence.</li>
+          <li><strong>Conversion-Driven:</strong> Every decision we make is focused on helping you achieve business results.</li>
+        </ul>
       </div>
-      <div class="card">
-        <h3>Clarity</h3>
-        <p>Our designs are intuitive and goal-driven, making sure every pixel has purpose.</p>
-      </div>
-      <div class="card">
-        <h3>Collaboration</h3>
-        <p>We work closely with you every step of the way — your goals are our mission.</p>
+
+      <div class="about-image">
+        <picture>
+          <source srcset="/KSBMEDIA/images/about-team.jpg" type="image/jpg">
+          <img src="/KSBMEDIA/images/about-team.jpg" alt="Our design team collaborating in studio">
+        </picture>
       </div>
     </div>
   </section>
 
-  <!-- CTA -->
-  <section class="cta">
-    <h2>Let’s Design the Future of Your Brand</h2>
-    <p>Ready to bring your vision to life? We’re here to help.</p>
-    <a href="contact.html" class="cta-button">Start Your Project</a>
-  </section>
-
-  <!-- Footer -->
-  <footer class="footer">
-    <p>&copy; 2025 KSB Media. All rights reserved.</p>
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2025 KSB Media. All rights reserved.</p>
+    </div>
   </footer>
 
 </body>
