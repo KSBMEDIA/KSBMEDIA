@@ -2,18 +2,20 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Home | KSB Media</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
-
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  
+  <!-- Styles -->
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <!-- NAVBAR -->
+  <!-- Header -->
   <header class="header">
-    <a href="index.html" class="logo">KSB Media</a>
+    <div class="logo">KSB Media</div>
     <nav class="navbar">
       <a href="index.html" class="active">Home</a>
       <a href="about.html">About</a>
@@ -23,117 +25,100 @@
     </nav>
   </header>
 
-  <!-- HERO SECTION -->
+  <!-- Hero Section -->
   <section class="hero">
-    <h1>We Build Stunning Websites</h1>
-    <p>At KSB Media, we turn ideas into engaging digital experiences that drive results and elevate brands online.</p>
-    <a href="contact.html" class="btn">Let’s Work Together</a>
+    <picture>
+      <source srcset="images/home-hero.jpg" type="image/jpeg">
+      <img src="images/home-hero.jpg" alt="Professional web design hero background" class="hero-image">
+    </picture>
+    <div class="hero-content">
+      <h1>Crafting Websites That Convert</h1>
+      <p>We design and build stunning, performance-driven websites that elevate your brand and drive business results.</p>
+      <a href="contact.html" class="cta-button">Get Started</a>
+    </div>
   </section>
 
-  <!-- SERVICES PREVIEW -->
-  <section id="services">
+  <!-- Services Preview -->
+  <section class="services-preview">
     <h2>Our Services</h2>
     <div class="card-container">
       <div class="card">
-        <h3>Website Design</h3>
-        <p>Eye-catching, user-centered designs that reflect your brand and convert visitors into customers.</p>
+        <picture>
+          <img src="images/services-web-design.jpg" alt="Web Design Service">
+        </picture>
+        <h3>Web Design</h3>
+        <p>Elegant, user-focused designs that capture attention and build trust.</p>
       </div>
       <div class="card">
-        <h3>Website Development</h3>
-        <p>Fast, clean, scalable builds with seamless performance and SEO best practices.</p>
+        <picture>
+          <img src="images/services-web-development.jpg" alt="Web Development Service">
+        </picture>
+        <h3>Web Development</h3>
+        <p>Responsive, fast, and modern websites built with clean code and scalable tech.</p>
       </div>
       <div class="card">
-        <h3>Website Redesigns</h3>
-        <p>Revamp outdated websites with modern aesthetics and improved functionality.</p>
+        <picture>
+          <img src="images/services-website-redesign.jpg" alt="Website Redesign Service">
+        </picture>
+        <h3>Website Redesign</h3>
+        <p>Transform your outdated site into a modern, engaging experience that performs.</p>
       </div>
     </div>
   </section>
 
-  <!-- PORTFOLIO PREVIEW -->
-  <section id="portfolio">
-    <h2>Featured Projects</h2>
-    <div class="card-container">
-      <div class="card">
-        <h3>Project One</h3>
-        <p>A sleek ecommerce platform tailored for mobile performance and conversions.</p>
-      </div>
-      <div class="card">
-        <h3>Project Two</h3>
-        <p>Brand-focused portfolio site with smooth animations and responsive layouts.</p>
-      </div>
-      <div class="card">
-        <h3>Project Three</h3>
-        <p>Corporate site redesign that improved UX and reduced bounce rates by 35%.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- TESTIMONIALS -->
-  <section id="testimonials">
+  <!-- Testimonials -->
+  <section class="testimonials">
     <h2>What Clients Say</h2>
     <div class="card-container">
       <div class="card">
-        <p>"KSB Media completely transformed our website. We saw immediate improvements in user engagement and sales."</p>
-        <h3>- Sarah, Online Retailer</h3>
+        <p>“KSB Media completely transformed our online presence. Our new site is gorgeous and gets results.”</p>
+        <h3>– Sarah L., Startup Founder</h3>
       </div>
       <div class="card">
-        <p>"Professional, fast, and creative. They delivered more than we expected. Highly recommend!"</p>
-        <h3>- David, Startup Founder</h3>
-      </div>
-      <div class="card">
-        <p>"Their design brought our brand to life. Great communication and technical skills!"</p>
-        <h3>- Mia, Consultant</h3>
+        <p>“A dream to work with. They listened, delivered, and exceeded expectations.”</p>
+        <h3>– James D., Agency Owner</h3>
       </div>
     </div>
   </section>
 
-  <!-- PRICING SECTION -->
-  <section id="pricing">
-    <h2>Pricing Plans</h2>
+  <!-- Portfolio Preview -->
+  <section class="portfolio-preview">
+    <h2>Featured Projects</h2>
     <div class="card-container">
       <div class="card">
-        <h3>Starter</h3>
-        <p>Perfect for personal projects or small businesses starting out.</p>
-        <ul>
-          <li>1 Page Design</li>
-          <li>Basic SEO</li>
-          <li>1 Revision</li>
-        </ul>
-        <a href="contact.html" class="btn">Get Started</a>
+        <picture>
+          <img src="images/portfolio-project1.jpg" alt="E-commerce Website Project">
+        </picture>
+        <h3>Luxury E-commerce</h3>
       </div>
       <div class="card">
-        <h3>Professional</h3>
-        <p>For growing brands that need a strong online presence.</p>
-        <ul>
-          <li>Up to 5 Pages</li>
-          <li>Advanced SEO</li>
-          <li>3 Revisions</li>
-        </ul>
-        <a href="contact.html" class="btn">Get Started</a>
+        <picture>
+          <img src="images/portfolio-project2.jpg" alt="Agency Website Project">
+        </picture>
+        <h3>Creative Agency Site</h3>
       </div>
       <div class="card">
-        <h3>Enterprise</h3>
-        <p>Custom-built for scale, integrations, and growth-focused features.</p>
-        <ul>
-          <li>Unlimited Pages</li>
-          <li>Full Customization</li>
-          <li>Ongoing Support</li>
-        </ul>
-        <a href="contact.html" class="btn">Get Started</a>
+        <picture>
+          <img src="images/portfolio-project3.jpg" alt="Tech Startup Project">
+        </picture>
+        <h3>Startup Launch Platform</h3>
       </div>
+    </div>
+    <div class="centered">
+      <a href="portfolio.html" class="btn">View Full Portfolio</a>
     </div>
   </section>
 
-  <!-- CTA SECTION -->
-  <section class="hero">
-    <h1>Let’s Build Something Great</h1>
-    <p>Whether you need a redesign or something built from scratch — we’re ready to bring your vision to life.</p>
-    <a href="contact.html" class="btn">Contact Us</a>
+  <!-- Call to Action -->
+  <section class="cta">
+    <h2>Let’s Build Something Incredible</h2>
+    <p>Book a free consultation today and discover how we can elevate your digital presence.</p>
+    <a href="contact.html" class="cta-button">Schedule a Call</a>
   </section>
 
-  <!-- FOOTER -->
+  <!-- Footer -->
   <footer class="footer">
-    <p>© 2025 KSB Media. All rights reserved.</p>
+    <p>&copy; 2025 KSB Media. All rights reserved.</p>
   </footer>
 
 </body>
