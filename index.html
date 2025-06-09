@@ -128,10 +128,10 @@
   </section>
 
   <!-- FINAL CTA SECTION -->
-  <section class="hero animate-section">
-    <h1 class="hero-heading">Let’s Build Something Great</h1>
-    <p class="hero-subtext">Whether you need a redesign or something built from scratch — we’re ready to bring your vision to life.</p>
-    <a href="contact.html" class="btn">Contact Us</a>
+  <section class="cta-final animate-cta">
+<h1 class="cta-heading">Let’s Build Something Great</h1>
+<p class="cta-subtext">Whether you need a redesign or something built from scratch — we’re ready to bring your vision to life.</p>
+<a href="contact.html" class="btn cta-btn">Contact Us</a>
   </section>
 
   <!-- FOOTER -->
@@ -173,41 +173,41 @@
       });
     });
 
-    // Final CTA animation (detailed)
-    gsap.from(".hero.animate-section .hero-heading", {
-      scrollTrigger: {
-        trigger: ".hero.animate-section",
-        start: "top 80%",
-      },
-      opacity: 0,
-      y: 40,
-      duration: 1,
-      ease: "power2.out"
-    });
+    // Final CTA animation
+gsap.from(".animate-cta .cta-heading", {
+  scrollTrigger: {
+    trigger: ".animate-cta",
+    start: "top 80%",
+  },
+  opacity: 0,
+  y: 40,
+  duration: 1,
+  ease: "power2.out"
+});
 
-    gsap.from(".hero.animate-section .hero-subtext", {
-      scrollTrigger: {
-        trigger: ".hero.animate-section",
-        start: "top 80%",
-      },
-      opacity: 0,
-      y: 30,
-      duration: 1,
-      delay: 0.2,
-      ease: "power2.out"
-    });
+gsap.from(".animate-cta .cta-subtext", {
+  scrollTrigger: {
+    trigger: ".animate-cta",
+    start: "top 80%",
+  },
+  opacity: 0,
+  y: 30,
+  duration: 1,
+  delay: 0.2,
+  ease: "power2.out"
+});
 
-    gsap.from(".hero.animate-section .btn", {
-      scrollTrigger: {
-        trigger: ".hero.animate-section",
-        start: "top 80%",
-      },
-      opacity: 0,
-      y: 20,
-      duration: 1,
-      delay: 0.4,
-      ease: "power2.out"
-    });
+gsap.from(".animate-cta .cta-btn", {
+  scrollTrigger: {
+    trigger: ".animate-cta",
+    start: "top 80%",
+  },
+  opacity: 0,
+  y: 20,
+  duration: 1,
+  delay: 0.4,
+  ease: "power2.out"
+});
 
     // Fade in header/footer
     gsap.from(".animate-fade-in", {
