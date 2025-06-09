@@ -37,9 +37,18 @@
   <section id="services" class="animate-section">
     <h2>Our Services</h2>
     <div class="card-container">
-      <div class="card"> <h3>Website Design</h3> <p>Eye-catching, user-centered designs that reflect your brand and convert visitors into customers.</p> </div>
-      <div class="card"> <h3>Website Development</h3> <p>Fast, clean, scalable builds with seamless performance and SEO best practices.</p> </div>
-      <div class="card"> <h3>Website Redesigns</h3> <p>Revamp outdated websites with modern aesthetics and improved functionality.</p> </div>
+      <div class="card">
+        <h3>Website Design</h3>
+        <p>Eye-catching, user-centered designs that reflect your brand and convert visitors into customers.</p>
+      </div>
+      <div class="card">
+        <h3>Website Development</h3>
+        <p>Fast, clean, scalable builds with seamless performance and SEO best practices.</p>
+      </div>
+      <div class="card">
+        <h3>Website Redesigns</h3>
+        <p>Revamp outdated websites with modern aesthetics and improved functionality.</p>
+      </div>
     </div>
   </section>
 
@@ -47,9 +56,18 @@
   <section id="portfolio" class="animate-section">
     <h2>Featured Projects</h2>
     <div class="card-container">
-      <div class="card"> <h3>Project One</h3> <p>A sleek ecommerce platform tailored for mobile performance and conversions.</p> </div>
-      <div class="card"> <h3>Project Two</h3> <p>Brand-focused portfolio site with smooth animations and responsive layouts.</p> </div>
-      <div class="card"> <h3>Project Three</h3> <p>Corporate site redesign that improved UX and reduced bounce rates by 35%.</p> </div>
+      <div class="card">
+        <h3>Project One</h3>
+        <p>A sleek ecommerce platform tailored for mobile performance and conversions.</p>
+      </div>
+      <div class="card">
+        <h3>Project Two</h3>
+        <p>Brand-focused portfolio site with smooth animations and responsive layouts.</p>
+      </div>
+      <div class="card">
+        <h3>Project Three</h3>
+        <p>Corporate site redesign that improved UX and reduced bounce rates by 35%.</p>
+      </div>
     </div>
   </section>
 
@@ -57,9 +75,18 @@
   <section id="testimonials" class="animate-section">
     <h2>What Clients Say</h2>
     <div class="card-container">
-      <div class="card"> <p>"KSB Media completely transformed our website. We saw immediate improvements in user engagement and sales."</p> <h3>- Sarah, Online Retailer</h3> </div>
-      <div class="card"> <p>"Professional, fast, and creative. They delivered more than we expected. Highly recommend!"</p> <h3>- David, Startup Founder</h3> </div>
-      <div class="card"> <p>"Their design brought our brand to life. Great communication and technical skills!"</p> <h3>- Mia, Consultant</h3> </div>
+      <div class="card">
+        <p>"KSB Media completely transformed our website. We saw immediate improvements in user engagement and sales."</p>
+        <h3>- Sarah, Online Retailer</h3>
+      </div>
+      <div class="card">
+        <p>"Professional, fast, and creative. They delivered more than we expected. Highly recommend!"</p>
+        <h3>- David, Startup Founder</h3>
+      </div>
+      <div class="card">
+        <p>"Their design brought our brand to life. Great communication and technical skills!"</p>
+        <h3>- Mia, Consultant</h3>
+      </div>
     </div>
   </section>
 
@@ -100,7 +127,7 @@
     </div>
   </section>
 
-  <!-- CTA SECTION -->
+  <!-- FINAL CTA SECTION -->
   <section class="hero animate-section">
     <h1>Let’s Build Something Great</h1>
     <p>Whether you need a redesign or something built from scratch — we’re ready to bring your vision to life.</p>
@@ -116,6 +143,7 @@
   <script>
     gsap.registerPlugin(ScrollTrigger);
 
+    // Hero animation
     gsap.from(".animate-hero .hero-heading", {
       y: 50,
       opacity: 0,
@@ -131,6 +159,7 @@
       ease: "power2.out"
     });
 
+    // Scroll animations for all sections
     gsap.utils.toArray(".animate-section").forEach(section => {
       gsap.from(section, {
         scrollTrigger: {
@@ -144,6 +173,7 @@
       });
     });
 
+    // Fade-in headers and footers
     gsap.from(".animate-fade-in", {
       opacity: 0,
       duration: 1,
