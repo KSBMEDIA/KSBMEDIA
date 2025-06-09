@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,14 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Home | KSB Media</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
+
+  <!-- GSAP Animation CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
 </head>
 <body>
 
   <!-- NAVBAR -->
-  <header class="header">
+  <header class="header animate-fade-in">
     <a href="index.html" class="logo">KSB Media</a>
     <nav class="navbar">
       <a href="index.html" class="active">Home</a>
@@ -25,71 +27,44 @@
   </header>
 
   <!-- HERO SECTION -->
-  <section class="hero">
-    <h1>We Build Stunning Websites</h1>
-    <p>At KSB Media, we turn ideas into engaging digital experiences that drive results and elevate brands online.</p>
+  <section class="hero animate-hero">
+    <h1 class="hero-heading">We Build Stunning Websites</h1>
+    <p class="hero-subtext">At KSB Media, we turn ideas into engaging digital experiences that drive results and elevate brands online.</p>
     <a href="contact.html" class="btn">Let’s Work Together</a>
   </section>
 
   <!-- SERVICES PREVIEW -->
-  <section id="services">
+  <section id="services" class="animate-section">
     <h2>Our Services</h2>
     <div class="card-container">
-      <div class="card">
-        <h3>Website Design</h3>
-        <p>Eye-catching, user-centered designs that reflect your brand and convert visitors into customers.</p>
-      </div>
-      <div class="card">
-        <h3>Website Development</h3>
-        <p>Fast, clean, scalable builds with seamless performance and SEO best practices.</p>
-      </div>
-      <div class="card">
-        <h3>Website Redesigns</h3>
-        <p>Revamp outdated websites with modern aesthetics and improved functionality.</p>
-      </div>
+      <div class="card"> <h3>Website Design</h3> <p>Eye-catching, user-centered designs that reflect your brand and convert visitors into customers.</p> </div>
+      <div class="card"> <h3>Website Development</h3> <p>Fast, clean, scalable builds with seamless performance and SEO best practices.</p> </div>
+      <div class="card"> <h3>Website Redesigns</h3> <p>Revamp outdated websites with modern aesthetics and improved functionality.</p> </div>
     </div>
   </section>
 
   <!-- PORTFOLIO PREVIEW -->
-  <section id="portfolio">
+  <section id="portfolio" class="animate-section">
     <h2>Featured Projects</h2>
     <div class="card-container">
-      <div class="card">
-        <h3>Project One</h3>
-        <p>A sleek ecommerce platform tailored for mobile performance and conversions.</p>
-      </div>
-      <div class="card">
-        <h3>Project Two</h3>
-        <p>Brand-focused portfolio site with smooth animations and responsive layouts.</p>
-      </div>
-      <div class="card">
-        <h3>Project Three</h3>
-        <p>Corporate site redesign that improved UX and reduced bounce rates by 35%.</p>
-      </div>
+      <div class="card"> <h3>Project One</h3> <p>A sleek ecommerce platform tailored for mobile performance and conversions.</p> </div>
+      <div class="card"> <h3>Project Two</h3> <p>Brand-focused portfolio site with smooth animations and responsive layouts.</p> </div>
+      <div class="card"> <h3>Project Three</h3> <p>Corporate site redesign that improved UX and reduced bounce rates by 35%.</p> </div>
     </div>
   </section>
 
   <!-- TESTIMONIALS -->
-  <section id="testimonials">
+  <section id="testimonials" class="animate-section">
     <h2>What Clients Say</h2>
     <div class="card-container">
-      <div class="card">
-        <p>"KSB Media completely transformed our website. We saw immediate improvements in user engagement and sales."</p>
-        <h3>- Sarah, Online Retailer</h3>
-      </div>
-      <div class="card">
-        <p>"Professional, fast, and creative. They delivered more than we expected. Highly recommend!"</p>
-        <h3>- David, Startup Founder</h3>
-      </div>
-      <div class="card">
-        <p>"Their design brought our brand to life. Great communication and technical skills!"</p>
-        <h3>- Mia, Consultant</h3>
-      </div>
+      <div class="card"> <p>"KSB Media completely transformed our website. We saw immediate improvements in user engagement and sales."</p> <h3>- Sarah, Online Retailer</h3> </div>
+      <div class="card"> <p>"Professional, fast, and creative. They delivered more than we expected. Highly recommend!"</p> <h3>- David, Startup Founder</h3> </div>
+      <div class="card"> <p>"Their design brought our brand to life. Great communication and technical skills!"</p> <h3>- Mia, Consultant</h3> </div>
     </div>
   </section>
 
   <!-- PRICING SECTION -->
-  <section id="pricing">
+  <section id="pricing" class="animate-section">
     <h2>Pricing Plans</h2>
     <div class="card-container">
       <div class="card">
@@ -126,16 +101,56 @@
   </section>
 
   <!-- CTA SECTION -->
-  <section class="hero">
+  <section class="hero animate-section">
     <h1>Let’s Build Something Great</h1>
     <p>Whether you need a redesign or something built from scratch — we’re ready to bring your vision to life.</p>
     <a href="contact.html" class="btn">Contact Us</a>
   </section>
 
   <!-- FOOTER -->
-  <footer class="footer">
+  <footer class="footer animate-fade-in">
     <p>© 2025 KSB Media. All rights reserved.</p>
   </footer>
+
+  <!-- ANIMATION SCRIPT -->
+  <script>
+    gsap.registerPlugin(ScrollTrigger);
+
+    gsap.from(".animate-hero .hero-heading", {
+      y: 50,
+      opacity: 0,
+      duration: 1.2,
+      ease: "power4.out"
+    });
+
+    gsap.from(".animate-hero .hero-subtext", {
+      y: 40,
+      opacity: 0,
+      delay: 0.2,
+      duration: 1,
+      ease: "power2.out"
+    });
+
+    gsap.utils.toArray(".animate-section").forEach(section => {
+      gsap.from(section, {
+        scrollTrigger: {
+          trigger: section,
+          start: "top 80%",
+        },
+        opacity: 0,
+        y: 50,
+        duration: 1,
+        ease: "power2.out"
+      });
+    });
+
+    gsap.from(".animate-fade-in", {
+      opacity: 0,
+      duration: 1,
+      delay: 0.2,
+      ease: "power1.out"
+    });
+  </script>
 
 </body>
 </html>
